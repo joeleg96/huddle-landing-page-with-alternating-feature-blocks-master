@@ -294,11 +294,11 @@ body {
 
 .company_phone {
     display: flex;
-    justify-content: space-between;
+    justify-content: start;
     align-items: baseline;
+    align-items: left;
 
     padding-left: 20px;
-    padding-right: 20px;
 }
 
 .company_phone_img {
@@ -307,15 +307,15 @@ body {
 }
 
 .company_phone_p {
-    padding-right: 15em;
+    padding-left: 1em;
 }
 .company_email {
     display: flex;
-    justify-content: space-between;
+    justify-content: start;
     align-items: baseline;
+    align-items: left;
 
     padding-left: 20px;
-    padding-right: 20px;
 }
 
 .company_email_img {
@@ -324,7 +324,7 @@ body {
 }
 
 .company_email_p {
-    padding-right: 14em;
+    padding-left: 1em;
 }
 
 .company_info {
@@ -334,7 +334,7 @@ body {
 }
 
 .company_info_list a {
-    decoration: none;
+    text-decoration: none;
 }
 
 .company_info a:hover {
@@ -358,7 +358,7 @@ body {
 
 .social_media_item:hover {
     cursor: pointer;
-    color: var(--pink);
+    color: hsl(208, 11%, 55%);;
     transform: scale(1.3);
 }
 
@@ -382,7 +382,7 @@ body {
         margin-bottom: -.25px;
     }
 
-    .hero_content {
+    .hero_content_p {
         grid-area: c;
     }
 
@@ -484,9 +484,7 @@ body {
         grid-template-columns: min-content max-content;
     }
 
-    .company_location,
-    .company_phone,
-    .company_email {
+    .company_contact {
         grid-area: a;
     }
 

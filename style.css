@@ -271,13 +271,25 @@ body {
 .company_location {
     display: flex;
     justify-content: space-between;
+
 }
 
 .company_location_img {
-    width: 10%;
+    width: auto;
+    height: 70%;
 }
 
 .company_location_p {
     padding-left: 20px;
     padding-right: 20px;
+}
+
+.company_phone {
+    display: flex;
+    justify-content: space-between;
+}
+
+.company_phone_img {
+    height: 30%;
+    width: auto;
 }

@@ -19,6 +19,7 @@ body {
     overflow-x: hidden;
     font-size: var(--fs-body);
     margin: 0;
+    font-family: var(--ff-body);
 }
 
 .h1 {
@@ -48,6 +49,9 @@ body {
     border-radius: 20px;
     background-color: white;
     color: black;
+    box-shadow: 0px 1px 24px -1px rgba(0,0,0,0.37);
+    -webkit-box-shadow: 0px 1px 24px -1px rgba(0,0,0,0.37);
+    -moz-box-shadow: 0px 1px 24px -1px rgba(0,0,0,0.37);
 }
 
 .btn:hover {
@@ -241,6 +245,8 @@ body {
     -moz-box-shadow: 0px 1px 24px -1px rgba(0,0,0,0.37);
 
     border-radius: 20px;
+
+    background-color: white;
 }
 
 .ready_to_build_title {
@@ -266,6 +272,7 @@ body {
 
     max-width: 100%;
     margin-top: 20px;
+
 }
  .company_info_logo {
     padding-top: 20px;
@@ -274,7 +281,6 @@ body {
 
 .company_location {
     display: flex;
-    justify-content: space-between;
     align-items: baseline;
 
     padding-left: 20px;
@@ -284,12 +290,12 @@ body {
 
 .company_location_img {
     width: auto;
-    height: 70%;
+    height: 20px;
 }
 
 .company_location_p {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 1em;
+    
 }
 
 .company_phone {
@@ -302,7 +308,7 @@ body {
 }
 
 .company_phone_img {
-    height: 30%;
+    height: 20px;
     width: auto;
 }
 
@@ -319,7 +325,7 @@ body {
 }
 
 .company_email_img {
-    height: 30%;
+    height: 20px;
     width: auto;
 }
 
@@ -331,10 +337,18 @@ body {
     
     padding-bottom: 2.5em;
     padding-left: -90px;
+
+    
 }
 
 .company_info_list a {
     text-decoration: none;
+    
+}
+
+.company_info_list  {
+    list-style: none;
+
 }
 
 .company_info a:hover {
@@ -344,16 +358,11 @@ body {
 }
 
 .social_media {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    
 }
 
 .social_media_list {
     display: flex;
-    justify-content: space-between;
-    padding-left: 5em;
-    padding-right: 5em;
 }
 
 .social_media_item:hover {
@@ -479,21 +488,37 @@ body {
 @media (min-width: 700px) {
     .container_2 {
         display: grid;
-        grid-template-areas: 
-            "a b c";
-        grid-template-columns: min-content max-content;
+        grid-template-columns: 
+            2fr 2fr auto;
+    padding: 20px;
     }
 
-    .company_contact {
-        grid-area: a;
+    .company_contact_container{
+        
     }
 
     .company_info {
-        grid-area: b;
+       
+       display: flex;
+
+    }
+
+    ul li {
+        margin-bottom: 20px;
     }
 
     .social_media {
-        grid-area: c;
+       
+
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+
+        
+    }
+
+    .copyright {
+        font-size: 8px;
     }
     
 
